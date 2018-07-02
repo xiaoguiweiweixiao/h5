@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+		.one {
+			 width: 600px;
+			 height: 600px;
+			 background-color: pink;
+			 margin: 50px auto;
+			 overflow: hidden;
+			 /*透视效果： 为了我们能够正常的查看立体效果的一个属性*/
+			 perspective: 1000px;
+		}
+		.box {
+			 width: 200px;
+			 height: 200px;
+			 background-color: red;
+			 margin: 0 auto;
+			 margin-top: 200px;
+			 transition: all 1s linear;
+			 
+			 /*transform: translate(0px,20px);*/
+			/*transform: translateX(300px);*/
+			/*transform: translateY(300px);*/
+			/*transform: translateZ(length);*/
+		}
+		.one:hover .box {
+			transform: translateZ(300px);
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="one">
+		<div class="box"></div>
+	</div>
+	   
+</body>
+</html>
